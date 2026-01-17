@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault & Veneer | The Speakeasy Series</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Vault & Veener</div>
+            </nav>
+            <div class="hero-content">
+                <h1>Where Architecture <br><span class="accent">Meets Artistry</span></h1>
+                <p>Premium secret passage cabinetry designed for the modern connoisseur. Discover the Speakeasy Series.</p>
+                <a href="#quote-form" class="cta-button">Request a Custom Quote</a>
+            </div>
+        </div>
+    </header>
+    <section class="reveal-container">
+        <div class="container">
+            <h2 class="section-title">Art of Discretion</h2>
+            <div class="door-system">
+                <div class="hidden-content">
+                    <img src="https://plus.unsplash.com/premium_photo-1676823547752-1d24e8597047?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hidden Home Bar">
+                </div>
+                <div class="door-leaf" id="door">
+                    <div class="bookshelf">
+                        <div class="shelf"></div>
+                        <div class="shelf"></div>
+                        <div class="shelf"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">Hover or Tap the bookshelf to reveal the passage</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="grid">
+                <div class="feature-card">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"></svg>
+                    <h3>Seamless Integration</h3>
+                    <p>Zero-clearance hinges and precision edges make your entryway indistiguisable from standard carpentry.</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="2"><path d="M7 22v-8m10 8v-8M2 8h20L19 2H5L2 8Z"/><path d="M5 8v10h14V9"/></svg>
+                    <h3>Heavy-Duty Bearing</h3>
+                    <p>Engineered to support up to 500 lbs of real books and decor without sagging or losing alignment.</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="2"><path d="M11 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.7.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7"/></svg>
+                    <h3>Custom Wood Matching</h3>
+                    <p>Available in Walnut, Oak, Cherry, or custom stains to match your existing architectural millwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote-form" class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2>Start Your Project</h2>
+                <form id="leadForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <select id="cabinetType" required>
+                            <option value="" disabled selected>Select Cabinet Type</option>
+                            <option value="bookshelf">Bookshelf Hidden Door</option>
+                            <option value="mirror">Full-Lenght Mirror Entry</option>
+                            <option value="pantry">Pantry Stealth Passage</option>
+                        </select>
+                        <input type="text" id="timeline" placeholder="Project TImeline (e.g., 3 Months )" required>
+                    </div>
+                    <button type="submit" class="cta-button full-width">Get My Customer Quote</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
